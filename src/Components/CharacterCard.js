@@ -2,15 +2,18 @@ import React from "react";
 
 class CharacterCard extends React.Component {
   render() {
-    const { name, house, image1 } = this.props.character;
-    const { clickHouseHandler } = this.props;
     return (
       <li className="character-card">
-        <h3>{name}</h3>
-        <img src={image1} className="image1" alt="image1" />
+        <h3>{this.props.character.name}</h3>
+        <figure>
+          <img src={this.props.character.image1} alt="image1" />
+        </figure>
+
         <br />
-        <button onClick={() => clickHouseHandler(this.props.character)}>
-          🏠 {house}
+        <button
+          onClick={() => this.props.clickHouseHandler(this.props.character)}
+        >
+          🏠 {this.props.character.house}
         </button>
       </li>
     );

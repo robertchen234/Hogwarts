@@ -12,11 +12,16 @@ const CharacterDetails = props => {
         {house} 👈{" "}
       </h1>
       <h3>{name}</h3>
-      <img src={image2} className="image2" alt="image2" />
-      <br />
-      <button onClick={() => props.clickHouseHandler(props.character)}>🏠 {house}</button>
       <h4>Role: {role}</h4>
       <h4>Age: {age}</h4>
+      <br />
+      <figure className="image2">
+        <img className="image2" src={image2} alt="image2" />
+      </figure>
+      <br />
+      <button onClick={() => props.clickHouseHandler(props.character)}>
+        🏠 {house}
+      </button>
     </div>
   );
 };

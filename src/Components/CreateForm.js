@@ -18,6 +18,13 @@ class CreateForm extends React.Component {
 
   submitHandler = event => {
     event.preventDefault();
+
+    window.scrollTo({
+      top: 2000,
+      left: 100,
+      behavior: "smooth"
+    });
+
     this.props.submitCreateHandler(this.state);
     this.setState({
       name: "",
@@ -31,12 +38,13 @@ class CreateForm extends React.Component {
 
   render() {
     return (
-      <div className="create-form">
+      <div className="create-form form-group">
         <h1>New Wizard</h1>
         <form onSubmit={this.submitHandler}>
           <label htmlFor="name">Name:</label>
           <input
             id="name"
+            className="form-control"
             name="name"
             type="text"
             placeholder="Enter wizard name"
@@ -47,6 +55,7 @@ class CreateForm extends React.Component {
           <label htmlFor="age">Age:</label>
           <input
             id="age"
+            className="form-control"
             name="age"
             type="number"
             value={this.state.age}
@@ -56,6 +65,7 @@ class CreateForm extends React.Component {
           <label htmlFor="house">House:</label>
           <select
             id="house"
+            className="form-control"
             name="house"
             value={this.state.house}
             onChange={this.changeHandler}
@@ -69,6 +79,7 @@ class CreateForm extends React.Component {
           <label htmlFor="role">Role:</label>
           <input
             id="role"
+            className="form-control"
             name="role"
             type="text"
             placeholder="Enter wizard role"
@@ -79,6 +90,7 @@ class CreateForm extends React.Component {
           <label htmlFor="image1">Image 1:</label>
           <input
             id="image1"
+            className="form-control"
             name="image1"
             type="text"
             placeholder="Enter wizard image1"
@@ -89,14 +101,14 @@ class CreateForm extends React.Component {
           <label htmlFor="image2">Image 2:</label>
           <input
             id="image2"
+            className="form-control"
             name="image2"
             type="text"
             placeholder="Enter wizard image2"
             value={this.state.image2}
             onChange={this.changeHandler}
           />
-          <br />
-          <input type="submit" value="Submit" />
+          <input type="submit" className="button" value="Submit" />
         </form>
       </div>
     );

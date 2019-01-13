@@ -33,16 +33,10 @@ class App extends Component {
       .then(data => this.setState({ houses: data }));
   }
 
-  clickHouseHandler = (wizard) => {
+  clickHouseHandler = wizard => {
     this.setState({
-      showForm: true,
+      showForm: !this.state.showForm,
       wizard: wizard
-    });
-
-    window.scrollTo({
-      top: 300,
-      left: 100,
-      behavior: "smooth"
     });
   };
 
@@ -80,8 +74,11 @@ class App extends Component {
   };
 
   submitUpdateHandler = wizard => {
-    let wizardArray = [wizard]
-    let editedCharacters = [...this.state.characters].map(character => wizardArray.find(wizard => wizard.name === character.name) || character)
+    let wizardArray = [wizard];
+    let editedCharacters = [...this.state.characters].map(
+      character =>
+        wizardArray.find(wizard => wizard.name === character.name) || character
+    );
 
     fetch(`http://localhost:3001/characters/${wizard.id}`, {
       method: "PATCH",
@@ -92,6 +89,7 @@ class App extends Component {
       body: JSON.stringify(wizard)
     }).then(
       this.setState({
+        showForm: !this.state.showForm,
         characters: editedCharacters,
         filteredCharacters: editedCharacters
       })

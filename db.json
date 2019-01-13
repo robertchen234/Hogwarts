@@ -116,6 +116,33 @@
       "image1": "https://ewedit.files.wordpress.com/2018/10/fnbst2_action_newt_vert_main_dom_2764x4096_master.jpg",
       "image2": "https://mavpulse.com/wp-content/uploads/2017/04/MV5BMTU1MTI0NTIzOF5BMl5BanBnXkFtZTgwNjUyMDEwMDI@._CR51729743557_UX614_UY460._SY230_SX307_AL_-min.jpg",
       "id": 13
+    },
+    {
+      "name": "Keveroy Lockhart",
+      "age": "36",
+      "house": "Ravenclaw",
+      "role": "kevywevy",
+      "image1": "https://a1cf74336522e87f135f-2f21ace9a6cf0052456644b80fa06d4f.ssl.cf2.rackcdn.com/images/characters/p-harry-potter-kenneth-branagh-date.jpg",
+      "image2": "https://i.pinimg.com/236x/e9/1d/7b/e91d7bea804671597fcab3ac36a113e5--kenneth-branagh-party-ideas.jpg",
+      "id": 14
+    },
+    {
+      "name": "Mollana Weasley",
+      "age": "27",
+      "house": "Gryffindor",
+      "role": "caring",
+      "image1": "https://i1.wp.com/www.tor.com/wp-content/uploads/2016/11/molly-weasley-rebel.jpg",
+      "image2": "http://img4.bdbphotos.com/images/700x350/t/5/t5uv61sm3ynu6nmu.jpg",
+      "id": 15
+    },
+    {
+      "name": "Lushawn",
+      "age": "29",
+      "house": "Gryffindor",
+      "role": "master of transforming arts",
+      "image1": "https://vignette.wikia.nocookie.net/harrypotter/images/0/0c/Remus_lupin.jpg",
+      "image2": "https://pm1.narvii.com/6033/18e0fdf7292fac3660c805a45855f0ed6ee4dced_hq.jpg",
+      "id": 16
     }
   ],
   "houses": [

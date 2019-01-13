@@ -4,7 +4,7 @@ class SearchForm extends React.Component {
   render() {
     return (
       <div className="search-form">
-        <input
+        <input className="form-control"
           type="text"
           placeholder="Search wizards by name or house"
           value={this.props.value}
