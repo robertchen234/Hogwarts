@@ -29,7 +29,7 @@
   justify-content: space-evenly;
   align-items: center;
 }
-.houseContainer {
+/* .houseContainer {
   position: relative;
   top: 10%;
   width: 100%;
@@ -53,4 +53,59 @@
 .house-div {
   height: 100%;
   width: 100%;
+} */
+
+.search-form {
+  padding-top: 50px;
+  font-size: 1.5em;
+}
+.search-form input {
+  width: 90%;
+}
+
+.update-form,
+.create-form,
+.character-container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.character-card {
+  padding-top: 2em;
+}
+
+.create-form,
+.update-form {
+  float: right;
+  text-align: left;
+  width: 30%;
+}
+
+.character-container {
+  float: left;
+  width: 70%;
+}
+
+.house {
+  position: relative;
+  width: 25%;
+  top: 0px;
+}
+
+.image1 {
+  width: 200px;
+  height: auto;
+}
+
+.image2 {
+  width: 100px;
+  height: auto;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
 }

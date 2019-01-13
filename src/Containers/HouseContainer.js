@@ -3,6 +3,19 @@ import House from "../Components/House";
 
 export default class HouseContainer extends React.Component {
   render() {
-    return <ul className="houseContainer">{houses}</ul>;
+    return (
+      <div className="houseContainer">
+        <div className="list">
+          {this.props.houses.map(house => (
+            <House
+              key={house}
+              house={house}
+              characters={this.props.characters}
+              clickHouseHandler={this.props.clickHouseHandler}
+            />
+          ))}
+        </div>
+      </div>
+    );
   }
 }

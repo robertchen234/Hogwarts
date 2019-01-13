@@ -1,7 +1,21 @@
 import React from "react";
+import CharacterCard from "../Components/CharacterCard";
 
 export default class CharacterContainer extends React.Component {
   render() {
-    return <h1>Character Container</h1>;
+    return (
+      <div className="character-container">
+        <h1>Index</h1>
+        <ul className="list">
+          {this.props.characters.map(character => (
+            <CharacterCard
+              key={character.name}
+              character={character}
+              clickHouseHandler={this.props.clickHouseHandler}
+            />
+          ))}
+        </ul>
+      </div>
+    );
   }
 }

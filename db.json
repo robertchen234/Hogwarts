@@ -53,7 +53,75 @@
       "role": "professor",
       "image1": "https://fsmedia.imgix.net/21/fd/33/16/2844/4ec3/bae9/57d38001e216/sonserina.jpeg?rect=0%2C0%2C1920%2C959&dpr=2&auto=format%2Ccompress&w=650",
       "image2": "https://imgix.bustle.com/rehost/2016/9/13/4685a819-e442-4e36-af5b-9c8c42bfbf00.jpg?w=970&h=582&fit=crop&crop=faces&auto=format&q=70"
+    },
+    {
+      "id": 7,
+      "name": "Voldamir",
+      "age": "23",
+      "house": "Slytherin",
+      "role": "evil overlord",
+      "image1": "https://static.tvtropes.org/pmwiki/pub/images/voldemort.jpg",
+      "image2": "https://www.gannett-cdn.com/-mm-/51113c05e531144c5354e297104650e83bea2942/c=632-0-2240-1206/local/-/media/2017/02/09/USATODAY/usatsports/vol4.jpg"
+    },
+    {
+      "name": "Brian Puff",
+      "age": "24",
+      "house": "HufflePuff",
+      "role": "typical hufflepuff",
+      "image1": "https://i.pinimg.com/236x/90/d7/75/90d775afc232ffe12e7ac4aed937b1d1--jacob-kowalski-hp.jpg",
+      "image2": "http://www.konbini.com/wp-content/blogs.dir/11/files/2018/07/jacob-feat-480x279.jpg",
+      "id": 8
+    },
+    {
+      "name": "Lunquel Lovegood",
+      "age": 30,
+      "house": "Ravenclaw",
+      "role": "witty attacks",
+      "image1": "https://i.pinimg.com/236x/96/a3/1c/96a31c697643edf12fb1a108220760bc--harry-potter-characters-harry-potter-.jpg",
+      "image2": "https://images.pottermore.com/bxd3o8b291gf/Mam68Vfou2OO6kqEcyW8W/a9abc28e1e15bdd7d57f6257f3fed897/LunaLovegood_WB_F6_LunaLovegoodInQuibblerSpecsOnHogwartsExpress_Still_080615_Port.jpg",
+      "id": 9
+    },
+    {
+      "name": "Naoming Myrtle",
+      "age": "22",
+      "house": "Ravenclaw",
+      "role": "sometimes hyper",
+      "image1": "https://i.pinimg.com/236x/97/5d/4b/975d4b39c1d9737e37724c1f64207a80.jpg",
+      "image2": "https://papidre.files.wordpress.com/2013/03/moaning-myrtle.jpg",
+      "id": 10
+    },
+    {
+      "name": "Sorting Rob",
+      "age": "26",
+      "house": "Gryffindor",
+      "role": "i'm a hat",
+      "image1": "http://images.amcnetworks.com/bbcamerica.com/wp-content/uploads/2014/12/sortinghat-1600x720.jpg",
+      "image2": "https://pbs.twimg.com/profile_images/584076161325473793/gufAEGJv.png",
+      "id": 11
+    },
+    {
+      "name": "Grahamdore",
+      "age": "36",
+      "house": "Gryffindor",
+      "role": "legendary wizard",
+      "image1": "https://i.pinimg.com/originals/a2/47/7c/a2477c6b348ba0221f8a409c99978389.jpg",
+      "image2": "https://s1.r29static.com//bin/entry/a7c/720x864,80/1998537/image.jpg",
+      "id": 12
+    },
+    {
+      "name": "Newt Tonyander",
+      "age": "29",
+      "house": "HufflePuff",
+      "role": "help fantastic beasts",
+      "image1": "https://ewedit.files.wordpress.com/2018/10/fnbst2_action_newt_vert_main_dom_2764x4096_master.jpg",
+      "image2": "https://mavpulse.com/wp-content/uploads/2017/04/MV5BMTU1MTI0NTIzOF5BMl5BanBnXkFtZTgwNjUyMDEwMDI@._CR51729743557_UX614_UY460._SY230_SX307_AL_-min.jpg",
+      "id": 13
     }
   ],
-  "houses": ["Gryffindor", "Slytherin", "HufflePuff", "Ravenclaw"]
+  "houses": [
+    "Gryffindor",
+    "Slytherin",
+    "HufflePuff",
+    "Ravenclaw"
+  ]
 }
