@@ -2,9 +2,12 @@
   width: 100%;
   height: 100%;
 }
+
 .app {
   text-align: center;
   height: 100%;
+  background-color: #181818;
+  color: #fff;
 }
 
 .index-image {
@@ -84,6 +87,13 @@
 .character-container {
   float: left;
   width: 70%;
+  background-color: #181818;
+  color: #fff;
+}
+
+.houseContainer {
+  background-color: #181818;
+  color: #fff;
 }
 
 .house {
@@ -107,5 +117,12 @@
 }
 
 button {
+  background-color: #181818;
+  color: #fff;
   cursor: pointer;
+}
+
+form, input, select {
+  background-color: #181818;
+  color: #fff;
 }
