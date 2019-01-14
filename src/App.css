@@ -155,6 +155,12 @@ select {
   color: #fff;
 }
 
+.character-div {
+  padding-top: 50px;
+  width: 200px;
+  height: 150px;
+}
+
 .image2 {
   width: 150px;
   height: 100px;
@@ -283,4 +289,9 @@ figure:hover::before {
 #input {
   margin-left: -1000px;
   display: none;
+}
+
+#canvas {
+  width: 95%;
+  height: 200px;
 }

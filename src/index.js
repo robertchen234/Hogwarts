@@ -107,7 +107,7 @@ function Text(options) {
     buffer.fillStyle = '#000000';
     buffer.fillRect(0, 0, pool.width, pool.height);
 
-    this.size = options.size || 50;
+    this.size = options.size || 30;
     this.copy = (options.copy || `Hello!`) + ' ';
     this.color = options.color || '#fecd96';
     this.delay = options.delay || 4;
@@ -181,7 +181,7 @@ function render() {
     canvas = document.getElementById('canvas');
     input = document.getElementById('input');
     ctx = canvas.getContext('2d');
-    w =  675;
+    w =  700;
     h = 200;
     canvas.width = w;
     canvas.height = h;
@@ -189,7 +189,7 @@ function render() {
     particles = [];
     //
     text = new Text({
-        copy: 'Wizards'
+        copy: 'Hogwarts School of Witchcraft and Wizardry'
     });
     canvas.addEventListener('click', (e) => {
         const x = e.clientX;

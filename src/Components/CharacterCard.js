@@ -1,6 +1,14 @@
 import React from "react";
 
 class CharacterCard extends React.Component {
+  state = {
+    isClick: false
+  };
+
+  isClick = () => {
+    this.setState({ isClick: !this.state.isClick });
+  };
+
   render() {
     return (
       <li className="character-card">
@@ -8,28 +16,41 @@ class CharacterCard extends React.Component {
           className={
             this.props.character.house === "Gryffindor"
               ? "gryffindor"
-              : (this.props.character.house === "Slytherin"
+              : this.props.character.house === "Slytherin"
               ? "slytherin"
-              : (this.props.character.house === "HufflePuff"
+              : this.props.character.house === "HufflePuff"
               ? "hufflepuff"
-              : "ravenclaw"))
+              : "ravenclaw"
           }
         >
           {this.props.character.name}
         </h3>
-        <figure>
-          <img src={this.props.character.image1} alt="image1" />
-        </figure>
+
+        {this.state.isClick ? (
+          <div onClick={this.isClick} className="character-div pointer">
+            <h4>Role: {this.props.character.role}</h4>
+            <h4>Age: {this.props.character.age}</h4>
+          </div>
+        ) : (
+          <figure>
+            <img className="pointer"
+              onClick={this.isClick}
+              src={this.props.character.image1}
+              alt="image1"
+            />
+          </figure>
+        )}
 
         <br />
-        <button className={
+        <button
+          className={
             this.props.character.house === "Gryffindor"
               ? "gryffindor"
-              : (this.props.character.house === "Slytherin"
+              : this.props.character.house === "Slytherin"
               ? "slytherin"
-              : (this.props.character.house === "HufflePuff"
+              : this.props.character.house === "HufflePuff"
               ? "hufflepuff"
-              : "ravenclaw"))
+              : "ravenclaw"
           }
           onClick={() => this.props.clickHouseHandler(this.props.character)}
         >
