@@ -85,6 +85,7 @@
 .update-form form, .create-form form {
   border-style: solid;
   border-width: 1px;
+  border-radius: 4px;
   border-color: #fff;
   padding: 30px;
 }
@@ -294,4 +295,9 @@ figure:hover::before {
 #canvas {
   width: 95%;
   height: 200px;
+  border-radius: 4px;
+}
+
+h1, h3 {
+  border-radius: 2px;
 }
