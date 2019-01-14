@@ -9,7 +9,7 @@ export default class CharacterContainer extends React.Component {
           <input
             id="input"
             type="text"
-            maxlength="24"
+            maxLength="24"
           />
           <canvas id="canvas" />
         </div>

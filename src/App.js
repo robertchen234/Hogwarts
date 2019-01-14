@@ -15,7 +15,9 @@ class App extends Component {
     wizard: {},
 
     searchTerm: "",
-    filteredCharacters: []
+    filteredCharacters: [],
+
+    wizardUpdate: {}
   };
 
   componentDidMount() {
@@ -74,27 +76,35 @@ class App extends Component {
   };
 
   submitUpdateHandler = wizard => {
-    let wizardArray = [wizard];
-    let editedCharacters = [...this.state.characters].map(
-      character =>
-        wizardArray.find(wizard => wizard.name === character.name) || character
-    );
+    // let wizardArray = [wizard];
+    // let editedCharacters = [...this.state.characters].map(
+    //   character =>
+    //     wizardArray.find(wizard => wizard.name === character.name) || character
+    // );
 
-    fetch(`http://localhost:3001/characters/${wizard.id}`, {
-      method: "PATCH",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json"
-      },
-      body: JSON.stringify(wizard)
-    }).then(
-      this.setState({
-        showForm: !this.state.showForm,
-        characters: editedCharacters,
-        filteredCharacters: editedCharacters
-      })
-    );
+    let editedCharacters = [...this.state.characters].map(character => {
+      return character.id === wizard.id ? wizard : character;
+    });
+    this.setState({
+      showForm: !this.state.showForm,
+      characters: editedCharacters,
+      filteredCharacters: editedCharacters,
+      wizardUpdate: wizard
+    });
   };
+
+  componentDidUpdate(prevP, prevS) {
+    if (prevS.wizardUpdate !== this.state.wizardUpdate) {
+      fetch(`http://localhost:3001/characters/${this.state.wizardUpdate.id}`, {
+        method: "PATCH",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json"
+        },
+        body: JSON.stringify(this.state.wizardUpdate)
+      });
+    }
+  }
 
   render() {
     return (
@@ -123,7 +133,5 @@ class App extends Component {
     );
   }
 }
-
-
 
 export default App;

@@ -31,7 +31,7 @@
       "id": 4,
       "name": "Draco Malfoy",
       "age": 17,
-      "house": "Slytherin",
+      "house": "Gryffindor",
       "role": "student",
       "image1": "https://cdn.movieweb.com/img.news.tops/NEh934QRmEyekk_2_b/Tom-Felton-Draco-Malfoy-No-More-Harry-Potter.jpg",
       "image2": "https://qph.fs.quoracdn.net/main-qimg-0f9603b2605dce5b8dfb6d27028b02ab"
@@ -147,11 +147,38 @@
     {
       "name": "Eh & ric Twins",
       "age": "23",
-      "house": "Gryffindor",
+      "house": "HufflePuff",
       "role": "talking trash",
       "image1": "https://images.hellogiggles.com/uploads/2016/03/11021445/picture-of-fred-and-george-weasley-photo.jpg",
       "image2": "https://www.thesun.co.uk/wp-content/uploads/2016/11/nintchdbpict000280151971.jpg",
       "id": 17
+    },
+    {
+      "name": "Rosenbob",
+      "age": "24",
+      "house": "Slytherin",
+      "role": "Legend",
+      "image1": "https://i.pinimg.com/236x/35/df/73/35df73af4bc8c6c8488e3d03d40059ab--fantasy-wizard-fantasy-magician.jpg",
+      "image2": "https://wallpapertag.com/wallpaper/middle/2/e/b/661343-cool-washington-wizards-wallpapers-1920x1080-for-iphone-6.jpg",
+      "id": 18
+    },
+    {
+      "name": "Professor Carwick",
+      "age": "36",
+      "house": "Ravenclaw",
+      "role": "get drunkk",
+      "image1": "https://qph.fs.quoracdn.net/main-qimg-e4abada60cc1234cf770719138b4e5aa",
+      "image2": "https://imagesvc.timeincapp.com/v3/fan/image?url=https%3A%2F%2Fwizardsandwhatnot.com%2Ffiles%2F2015%2F11%2FProfessor-Flitwick-in-Harry-Potter.jpg",
+      "id": 19
+    },
+    {
+      "name": "Ganmar",
+      "age": "32",
+      "house": "Ravenclaw",
+      "role": "a wizard is never late",
+      "image1": "https://cms.qz.com/wp-content/uploads/2018/08/gandalf-lord-of-the-rings-e1534255368438.jpg",
+      "image2": "https://www.bookstr.com/sites/default/files/2018-01/gandalffeature.jpg",
+      "id": 20
     }
   ],
   "houses": [
