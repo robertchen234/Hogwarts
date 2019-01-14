@@ -107,12 +107,12 @@ function Text(options) {
     buffer.fillStyle = '#000000';
     buffer.fillRect(0, 0, pool.width, pool.height);
 
-    this.size = options.size || 30;
+    this.size = options.size || 38;
     this.copy = (options.copy || `Hello!`) + ' ';
     this.color = options.color || '#fecd96';
     this.delay = options.delay || 4;
     this.basedelay = this.delay;
-    buffer.font = `${this.size}px Comic Sans MS`;
+    buffer.font = `${this.size}px Times New Roman`;
     this.bound = buffer.measureText(this.copy);
     this.bound.height = this.size * 1.5;
     this.x = options.x || w * 0.5 - this.bound.width * 0.5;
@@ -167,7 +167,7 @@ function update() {
 function render() {
     ctx.globalCompositeOperation = 'source-over';
     ctx.globalAlpha = 0.9;
-    ctx.fillStyle = '#000000';
+    ctx.fillStyle = '#181818';
     ctx.fillRect(0, 0, w, h);
     //
     ctx.globalCompositeOperation = 'screen';

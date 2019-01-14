@@ -108,8 +108,13 @@
 
 .house {
   position: relative;
-  width: 25%;
-  top: 0px;
+  margin-top: 50px;
+  width: 52%;
+  height: 30%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+
 }
 
 .pointer {
