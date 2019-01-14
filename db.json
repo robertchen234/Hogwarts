@@ -143,6 +143,15 @@
       "image1": "https://vignette.wikia.nocookie.net/harrypotter/images/0/0c/Remus_lupin.jpg",
       "image2": "https://pm1.narvii.com/6033/18e0fdf7292fac3660c805a45855f0ed6ee4dced_hq.jpg",
       "id": 16
+    },
+    {
+      "name": "Eric Twins",
+      "age": "23",
+      "house": "Gryffindor",
+      "role": "cambio",
+      "image1": "https://images.hellogiggles.com/uploads/2016/03/11021445/picture-of-fred-and-george-weasley-photo.jpg",
+      "image2": "https://www.thesun.co.uk/wp-content/uploads/2016/11/nintchdbpict000280151971.jpg",
+      "id": 17
     }
   ],
   "houses": [

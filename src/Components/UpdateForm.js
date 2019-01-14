@@ -46,7 +46,18 @@ class UpdateForm extends React.Component {
 
     return (
       <div className="update-form">
-        <form onSubmit={this.submitHandler}>
+        <form
+          className={
+            this.state.house === "Gryffindor"
+              ? "gryffindor"
+              : this.state.house === "Slytherin"
+              ? "slytherin"
+              : this.state.house === "HufflePuff"
+              ? "hufflepuff"
+              : "ravenclaw"
+          }
+          onSubmit={this.submitHandler}
+        >
           <label htmlFor="house">
             <h1>Update {this.props.wizard.name}'s 🏠</h1>
           </label>

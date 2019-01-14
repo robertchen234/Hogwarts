@@ -31,11 +31,19 @@ class House extends Component {
       <div className="house">
         {this.state.isHouse ? (
           <div>
-            <h1>{this.props.house}</h1>
+            <h1 className={
+            this.props.house === "Gryffindor"
+              ? "gryffindor"
+              : (this.props.house === "Slytherin"
+              ? "slytherin"
+              : (this.props.house === "HufflePuff"
+              ? "hufflepuff"
+              : "ravenclaw"))
+          }>{this.props.house}</h1>
             <ul className="list">
               {this.state.characters.map(character => (
                 <HouseCard
-                  key={character.name}
+                  key={character.id}
                   character={character}
                   handleClick={this.handleClick}
                 />

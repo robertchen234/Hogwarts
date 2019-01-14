@@ -3,7 +3,15 @@ import React from "react";
 const HouseCard = props => {
   return (
     <li className="house-card">
-      <h1>{props.house}</h1>
+      <h1 className={
+            props.house === "Gryffindor"
+              ? "gryffindor"
+              : (props.house === "Slytherin"
+              ? "slytherin"
+              : (props.house === "HufflePuff"
+              ? "hufflepuff"
+              : "ravenclaw"))
+          }>{props.house}</h1>
       <figure className="image2">
         <img
           src={props.character.image2}

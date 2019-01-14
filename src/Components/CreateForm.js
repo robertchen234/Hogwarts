@@ -4,7 +4,7 @@ class CreateForm extends React.Component {
   state = {
     name: "",
     age: 30,
-    house: "Gryffindor",
+    house: "",
     role: "",
     image1: "",
     image2: ""
@@ -12,6 +12,7 @@ class CreateForm extends React.Component {
 
   changeHandler = event => {
     this.setState({
+      house: this.state.house ? this.state.house : "Gryffindor",
       [event.target.name]: event.target.value
     });
   };
@@ -39,8 +40,18 @@ class CreateForm extends React.Component {
   render() {
     return (
       <div className="create-form form-group">
-        <h1>New Wizard</h1>
-        <form onSubmit={this.submitHandler}>
+        
+        <form className={
+            this.state.house === "Gryffindor"
+              ? "gryffindor"
+              : this.state.house === "Slytherin"
+              ? "slytherin"
+              : this.state.house === "HufflePuff"
+              ? "hufflepuff"
+              : this.state.house === "Ravenclaw"
+              ? "ravenclaw" : "null"
+          } onSubmit={this.submitHandler}>
+          <h1>New Wizard</h1>
           <label htmlFor="name">Name:</label>
           <input
             id="name"

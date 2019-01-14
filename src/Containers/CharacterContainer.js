@@ -5,11 +5,18 @@ export default class CharacterContainer extends React.Component {
   render() {
     return (
       <div className="character-container">
-        <h1>Wizards</h1>
+        <div className="page page-laser-to-text">
+          <input
+            id="input"
+            type="text"
+            maxlength="24"
+          />
+          <canvas id="canvas" />
+        </div>
         <ul className="list">
           {this.props.characters.map(character => (
             <CharacterCard
-              key={character.name}
+              key={character.id}
               character={character}
               clickHouseHandler={this.props.clickHouseHandler}
             />
