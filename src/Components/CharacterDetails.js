@@ -1,6 +1,12 @@
 import React from "react";
 
 const CharacterDetails = props => {
+
+  const clickHandlers = () => {
+    props.clickHouseHandler(props.character);
+    props.handleClick(props.characters)
+  }
+
   return (
     <div className="character-details">
       <h1
@@ -38,7 +44,7 @@ const CharacterDetails = props => {
             ? "hufflepuff"
             : "ravenclaw"
         }
-        onClick={() => props.clickHouseHandler(props.character)}
+        onClick={clickHandlers}
       >
         🏠 {props.character.house}
       </button>
